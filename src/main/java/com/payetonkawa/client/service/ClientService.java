@@ -15,7 +15,7 @@ public class ClientService implements IClientService {
     private final ClientRepository clientRepository;
     private final RabbitTemplate rabbitTemplate;
 
-    // Constructor-based injection for dependencies
+    
     public ClientService(ClientRepository clientRepository, RabbitTemplate rabbitTemplate) {
         this.clientRepository = clientRepository;
         this.rabbitTemplate = rabbitTemplate;
