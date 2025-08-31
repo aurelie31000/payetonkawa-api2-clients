@@ -1,0 +1,21 @@
+services:
+  client-api:
+    build: .   # chemin vers le Dockerfile de client-api
+    image: payetonkawa-client-api
+    ports:
+      - "8081:8081"
+    depends_on:
+      - postgresdb
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://postgresdb:5432/nom_de_ta_base
+      - SPRING_DATASOURCE_USERNAME=postgres
+      - SPRING_DATASOURCE_PASSWORD=ton_mdp
+
+  postgresdb:
+    image: postgres:15-alpine
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: ton_mdp
+      POSTGRES_DB: nom_de_ta_base
+    ports:
+      - "5432:5432"
