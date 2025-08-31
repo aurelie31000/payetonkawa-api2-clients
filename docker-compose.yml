@@ -2,9 +2,9 @@
 version: '3.8'
 
 services:
-  # ---------------------------
+ 
   # Microservice client-api
-  # ---------------------------
+ 
   client-api:
     build: .                        # Dockerfile dans le même dossier
     image: payetonkawa-client-api
@@ -21,9 +21,9 @@ services:
       SPRING_JPA_HIBERNATE_DDL_AUTO: update
       SPRING_RABBITMQ_HOST: rabbitmq
 
-  # ---------------------------
+  
   # PostgreSQL
-  # ---------------------------
+  
   postgresdb:
     image: postgres:13
     container_name: client-api-postgresdb
@@ -37,9 +37,9 @@ services:
       - clientdb_data:/var/lib/postgresql/data
     restart: unless-stopped
   
-  # ---------------------------
+ 
   # RabbitMQ
-  # ---------------------------
+  
   rabbitmq:
     image: rabbitmq:3-management-alpine
     container_name: client-api-rabbitmq
@@ -48,8 +48,8 @@ services:
       - "15673:15672"   
     restart: unless-stopped
 
-# ---------------------------
+
 # Volumes pour persistance
-# ---------------------------
+
 volumes:
   clientdb_data:
