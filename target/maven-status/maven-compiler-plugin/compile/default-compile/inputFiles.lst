@@ -1,8 +1,0 @@
-/Users/hamererass.siham/payetonkawa-api2-clients/src/main/java/com/payetonkawa/client/config/RabbitMQConfig.java
-/Users/hamererass.siham/payetonkawa-api2-clients/src/main/java/com/payetonkawa/client/exception/ResourceNotFoundException.java
-/Users/hamererass.siham/payetonkawa-api2-clients/src/main/java/com/payetonkawa/client/repository/ClientRepository.java
-/Users/hamererass.siham/payetonkawa-api2-clients/src/main/java/com/payetonkawa/client/controller/ClientController.java
-/Users/hamererass.siham/payetonkawa-api2-clients/src/main/java/com/payetonkawa/client/service/IClientService.java
-/Users/hamererass.siham/payetonkawa-api2-clients/src/main/java/com/payetonkawa/client/service/ClientService.java
-/Users/hamererass.siham/payetonkawa-api2-clients/src/main/java/com/payetonkawa/client/model/Client.java
-/Users/hamererass.siham/payetonkawa-api2-clients/src/main/java/com/payetonkawa/client/ClientApplication.java

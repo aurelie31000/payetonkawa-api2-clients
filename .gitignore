@@ -1,15 +1,16 @@
-# Dossiers et fichiers à ignorer pour Maven
-target/
-*.log
-*.tmp
-*.class
-*.jar
-*.war
-
-# Dossiers IDE
-.idea/
+# VS Code
 .vscode/
 
-# Fichiers spécifiques OS
-.DS_Store
-Thumbs.db
+# Maven / Java
+/target/
+*.class
+*.jar
+
+# Logs
+*.log
+
+# Database / PostgreSQL
+pgdata/
+*.sql
+*.dump
+*.backup
