@@ -1,42 +1,38 @@
-name: Build and Push Client API
+name: CI Pipeline - Client API
 
 on:
   push:
     branches:
-      - main
+      - develop
+      - feature/ajout-login
+      - feature/ajout-produit
   pull_request:
     branches:
-      - main
+      - develop
+      - feature/ajout-login
+      - feature/ajout-produit
 
 jobs:
-  build_and_publish:
+  build-test:
     runs-on: ubuntu-latest
-    
     steps:
-    
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Set up JDK 17
+      - name: Setup JDK 17
         uses: actions/setup-java@v3
         with:
-          java-version: '17'
-          distribution: 'temurin'
-          cache: maven
+          distribution: temurin
+          java-version: 17
 
       - name: Build with Maven
-        run: mvn -B package --file pom.xml
+        run: mvn clean install -DskipTests=false
 
-      - name: Log in to Docker Hub
-        uses: docker/login-action@v2
-        with:
-          username: ${{ secrets.DOCKER_USERNAME }}
-          password: ${{ secrets.DOCKER_PASSWORD }}
-          
-      - name: Build and push Docker image
-        uses: docker/build-push-action@v4
-        with:
-          context: .
-          push: true
-          tags: votre-utilisateur-docker/client-api:latest
+      - name: Run Tests
+        run: mvn test
 
+      - name: Build Docker image
+        run: docker build -t payetonkawa-client-api .
+
+      - name: Save Docker image
+        run: docker save payetonkawa-client-api > client-api.tar
