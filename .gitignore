@@ -1,4 +1,6 @@
-# Dossiers et fichiers à ignorer pour Maven
+# ================================
+# Maven / Build
+# ================================
 target/
 *.log
 *.tmp
@@ -6,10 +8,26 @@ target/
 *.jar
 *.war
 
-# Dossiers IDE
+# ================================
+# IDE / Editors
+# ================================
 .idea/
 .vscode/
+*.iml
 
-# Fichiers spécifiques OS
+# Eclipse specific
+.project
+.classpath
+.settings/
+
+# ================================
+# OS Specific
+# ================================
 .DS_Store
 Thumbs.db
+
+# ================================
+# Autres fichiers à ignorer
+# ================================
+/bin/
+/out/
