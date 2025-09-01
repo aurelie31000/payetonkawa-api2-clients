@@ -1,8 +1,0 @@
-C:\Users\sihem\payetonkawa-api2-clients\src\main\java\com\payetonkawa\client\ClientApplication.java
-C:\Users\sihem\payetonkawa-api2-clients\src\main\java\com\payetonkawa\client\model\Client.java
-C:\Users\sihem\payetonkawa-api2-clients\src\main\java\com\payetonkawa\client\service\ClientService.java
-C:\Users\sihem\payetonkawa-api2-clients\src\main\java\com\payetonkawa\client\service\IClientService.java
-C:\Users\sihem\payetonkawa-api2-clients\src\main\java\com\payetonkawa\client\config\RabbitMQConfig.java
-C:\Users\sihem\payetonkawa-api2-clients\src\main\java\com\payetonkawa\client\controller\ClientController.java
-C:\Users\sihem\payetonkawa-api2-clients\src\main\java\com\payetonkawa\client\exception\ResourceNotFoundException.java
-C:\Users\sihem\payetonkawa-api2-clients\src\main\java\com\payetonkawa\client\repository\ClientRepository.java

@@ -1,8 +1,0 @@
-com\payetonkawa\client\ClientApplication.class
-com\payetonkawa\client\repository\ClientRepository.class
-com\payetonkawa\client\service\IClientService.class
-com\payetonkawa\client\config\RabbitMQConfig.class
-com\payetonkawa\client\controller\ClientController.class
-com\payetonkawa\client\service\ClientService.class
-com\payetonkawa\client\exception\ResourceNotFoundException.class
-com\payetonkawa\client\model\Client.class
